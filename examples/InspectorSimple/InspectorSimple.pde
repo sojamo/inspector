@@ -1,4 +1,4 @@
-import net.sojamo.inspector.*;
+import sojamo.inspector.*;
 
 Inspector inspector;
 

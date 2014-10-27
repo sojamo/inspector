@@ -15,7 +15,7 @@ To install the library, download a release from the [github repository](https://
 Simple as that, an Inspector inspecting the state of mouseX, mouseY, mousePressed.
 
 ```java
-	import net.sojamo.inspector.*;
+	import sojamo.inspector.*;
 	
 	Inspector inspector;
 	
@@ -43,7 +43,7 @@ _example 1, see code below_
 
 ```java
 
-	import net.sojamo.inspector.*;
+	import sojamo.inspector.*;
 
 	// some variable we want to observe
 	int a = 0;

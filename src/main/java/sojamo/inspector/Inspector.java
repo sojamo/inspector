@@ -1,4 +1,4 @@
-package net.sojamo.inspector;
+package sojamo.inspector;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

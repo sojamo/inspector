@@ -1,23 +1,24 @@
-import net.sojamo.inspector.*;
+import sojamo.inspector.*;
 
 
 int a = 0;
 int b = 0;
+float d;
 ArrayList l = new ArrayList();
 Test test = new Test();
+
 void setup() {
-  size(800,400,P3D);
-  noStroke();
+  size(800,400);
   Inspector inspect = new Inspector(this);
   inspect.setSize(320,210).setPosition(10,10).setSpacing(20);
-  inspect.add("d","a","mouseX", "mouseY", "mousePressed", "keyPressed","test values","test values size","frameCount");
+  inspect.add("d","a","mouseX", "mouseY", "mousePressed");
+  inspect.add("keyPressed","test values","test values size","frameCount");
   inspect.change("test values", "min",0,"max",50, "scale",0.5);
   }
 
-double d;
-
 void draw() {
   background(0,255,128);
+  noStroke();
   d = abs(sin(frameCount*0.01)) * 400;
   translate(width/2, height/2);
   ellipse(0,0,(float)d,(float)d);
