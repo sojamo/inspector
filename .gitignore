@@ -1,0 +1,10 @@
+.DS_Store
+/distribution/
+/reference/
+/target/
+/tmp/
+/.externalToolBuilders/
+/.settings/
+.buildpath
+.classpath
+.project
