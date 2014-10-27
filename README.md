@@ -10,9 +10,32 @@ Inspector is a processing library to display the state of variables on screen on
 To install the library, download a release from the [github repository](https://github.com/sojamo/inspector/releases) and copy the unzipped folder _inspector_ into the libraries folder of your processing sketchbook (on osx for example this folder's location is ~/Documents/Processing/libraries).
 
 
+## Instantiate an Inspector
+
+Simple as that, an Inspector inspecting the state of mouseX, mouseY, mousePressed.
+
+```java
+	import net.sojamo.inspector.*;
+	
+	Inspector inspector;
+	
+	void setup() {
+		size(800,400);
+		inspector = new Inspector(this);
+		inspector.add("mouseX","mouseY","mousePressed");
+	}
+	
+	void draw() {
+		background(0,255,128);
+	}
+	
+```
+
 ## Getting Started
 
 Inspector is a simple helper library that displays the state of variables on top of a processing sketch.
+
+
 
 ![example 1](resources/images/inspector-screenshot-1.png)
 _example 1, see code below_
@@ -95,26 +118,6 @@ _example 1, see code below_
 	
 ```
 
-### Instantiate an Inspector
-
-Simple as that, an Inspector inspecting the state of mouseX, mouseY, mousePressed.
-
-```java
-	import net.sojamo.inspector.*;
-	
-	Inspector inspector;
-	
-	void setup() {
-		size(800,400);
-		inspector = new Inspector(this);
-		inspector.add("mouseX","mouseY","mousePressed");
-	}
-	
-	void draw() {
-		background(0,255,128);
-	}
-	
-```
 
 
 ## Current Status
