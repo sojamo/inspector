@@ -95,6 +95,27 @@ _example 1, see code below_
 	
 ```
 
+### Instantiate an Inspector
+
+Simple as that, an Inspector inspecting the state of mouseX, mouseY, mousePressed.
+
+```java
+	import net.sojamo.inspector.*;
+	
+	Inspector inspector;
+	
+	void setup() {
+		size(800,400);
+		inspector = new Inspector(this);
+		inspector.add("mouseX","mouseY","mousePressed");
+	}
+	
+	void draw() {
+		background(0,255,128);
+	}
+	
+```
+
 
 ## Current Status
 
