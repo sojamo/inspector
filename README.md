@@ -43,10 +43,15 @@ _example 1, see code below_
 		inspect.add("keyPressed","test values","test values size","frameCount");
 	  
 		// An Inspector element is of type Map.
-		// the code line below makes changes to element 'test values' 
-		// which refers to the List values of object test
-		// here the min, max, scale parameters are used to customize the display for List values
-		inspect.change("test values", "min",0,"max",50, "scale",0.5);
+		// the code line below makes changes to the inspector element 'test values' 
+		// there are 7 parameters that are passed on to the inspector
+		// the 1st parameter is the named index of the observed element
+		// the following parameters must be read as pairs.
+		// ("min",0 is a [air with key=min and value=0)
+		// These will be added to the inspector element as a key and value
+		// here the min, max, scale pairs are used to customize the 
+		// display element 'test values'
+		inspect.change("test values", "min", 0, "max", 50, "scale", 0.5);
 	}
 
 	void draw() {
